@@ -1,0 +1,3 @@
+[submodule "themes/primer"]
+	path = themes/primer
+	url = https://github.com/iceiceiceJack/primer.git
