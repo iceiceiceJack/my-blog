@@ -1,4 +1,10 @@
-baseURL = "http://example.org/"
+baseURL = "http://jiaoshou.me/"
 languageCode = "en-us"
 title = "Hello X!"
-theme = "primer"
+theme = "hugo-primer"
+
+[[menu.main]]
+  name = "Blog"
+  weight = 1
+  identifier = "blog"
+  url = "/blog"

@@ -1,0 +1,11 @@
+---
+title: "Me"
+draft: false
+menu: main
+weight: -1
+url: "/"
+---
+
+* about me
+im jackie 
+
