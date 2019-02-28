@@ -1,0 +1,40 @@
+#+HUGO_BASE_DIR: ./
+
+#+HUGO_WEIGHT: auto
+#+HUGO_AUTO_SET_LASTMOD: t
+
+* Me
+   :PROPERTIES:
+   :EXPORT_HUGO_SECTION: ./
+   :EXPORT_FILE_NAME: _index
+   :EXPORT_HUGO_MENU: :menu main :weight -1000
+   :END:
+** About me
+  Name: Jackie Zhang / 张 凯
+
+  Email: i@jiaoshou.me
+*** Interest
+   Deep Learning
+*** Hobby
+   Movie
+*** Links
+   [[https://github.com/iceiceiceJack/][Github]]
+
+** Major Projects
+   
+
+* Blog
+   :PROPERTIES:
+   :EXPORT_HUGO_SECTION: Blog
+   :END:
+
+** Misc                                                               :@misc:
+   :PROPERTIES:
+   :EXPORT_HUGO_SECTION*: misc
+   :END:
+   
+
+** Python                                                           :@python:
+   :PROPERTIES:
+   :EXPORT_HUGO_SECTION*: python
+   :END:

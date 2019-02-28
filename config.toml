@@ -1,10 +1,18 @@
-baseURL = "http://jiaoshou.me/"
-languageCode = "en-us"
-title = "Hello X!"
+baseURL = "https://jiaoshou.me/"
+title = "啥也不会张较瘦"
 theme = "hugo-primer"
+languageCode = "zh-cn"
+hasCJKLanguage = true
+summaryLength = 70
+# Code pen
+pygmentsCodeFences = true
+pygmentsUseClasses = true
 
-[[menu.main]]
-  name = "Blog"
-  weight = 1
-  identifier = "blog"
-  url = "/blog"
+copyright = "&copy;Jackie Zhang 2019"
+
+[params]
+description = "啥也不会"
+# Chose Social Sharing Buttons you want to use.
+shareTo = ["Twitter", "Facebook"]
+# You may disable copyright sentence by setting this to false.
+showFooterCredits = true
