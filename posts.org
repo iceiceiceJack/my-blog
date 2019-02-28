@@ -32,7 +32,71 @@
    :PROPERTIES:
    :EXPORT_HUGO_SECTION*: misc
    :END:
-   
+*** DONE Ubuntu开箱                                            :ubuntu:setup:
+    :PROPERTIES:
+    :EXPORT_HUGO_BUNDLE: ubuntu开箱
+    :EXPORT_DATE: [2019-01-18 Thu 22:17]
+    :EXPORT_FILE_NAME: index
+    :END:
+    记录下新装 Ubuntu 18.04 的环境配置。
+    #+HUGO: more
+**** sudo 免密码
+     #+BEGIN_SRC sh
+       sudo su -
+       visudo
+     #+END_SRC
+     找到 root ALL=(ALL) ALL, 在其下面追加如下配置，即执行所有超级用户命令密码。
+     #+BEGIN_SRC sh
+       your_user_name ALL=(ALL) NOPASSWD: ALL
+     #+END_SRC
+     有的时候你的将用户设了 nopasswd，但是不起作用，原因是被后面的 group 的设置覆盖了，需要把 group 的设置也改为 nopasswd。
+     #+BEGIN_SRC sh
+       %admin ALL=(ALL) NOPASSWD: ALL
+     #+END_SRC
+**** 更新
+     #+BEGIN_SRC sh
+       sudo apt update && sudo apt upgrade -y
+     #+END_SRC
+**** 开启ssh远程登录
+     #+BEGIN_SRC sh
+       sudo apt install -y openssh-server
+     #+END_SRC
+**** 安装基本工具
+     #+BEGIN_SRC sh
+       sudo apt install -y vim tmux supervisor build-essential pkg-config
+     #+END_SRC
+**** bash设置优化
+     #+BEGIN_SRC sh
+       echo 'set match-hidden-files off' >> ~/.inputrc
+       echo 'set show-all-if-ambiguous on' >> ~/.inputrc
+       echo 'set completion-ignore-case on' >> ~/.inputrc
+       echo '"\e[A": history-search-backward' >> ~/.inputrc
+       echo '"\e[B": history-search-forward' >> ~/.inputrc
+     #+END_SRC
+**** cuda
+     1.禁用nouveau
+      - 如果下面的指令有输出，表示nouveau驱动被加载，需手动禁用
+     #+BEGIN_SRC sh
+       lsmod | grep nouveau
+     #+END_SRC
+      - 执行
+     #+BEGIN_SRC sh
+       echo 'blacklist nouveau' | sudo tee -a /etc/modprobe.d/blacklist-nouveau.conf
+       echo 'options nouveau modeset=0' | sudo tee -a /etc/modprobe.d/blacklist-nouveau.conf
+       sudo update-initramfs -u
+     #+END_SRC
+     2.重启,不要进入图形界面
+     #+BEGIN_SRC sh
+       sudo reboot
+     #+END_SRC
+     3.运行官网下载的runfile
+**** cudnn
+     下载对应cuda版本的cudnn，并解压
+     #+BEGIN_SRC sh
+       sudo cp -P include/cudnn.h /usr/local/cuda/include
+       sudo cp -P lib64/libcudnn* /usr/local/cuda/lib64
+       sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
+     #+END_SRC
 
 ** Python                                                           :@python:
    :PROPERTIES:
