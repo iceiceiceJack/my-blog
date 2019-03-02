@@ -1,7 +1,7 @@
 +++
 title = "Me"
 author = ["Jackie Zhang"]
-lastmod = 2019-02-28T15:43:06+08:00
+lastmod = 2019-03-01T15:39:57+08:00
 draft = false
 weight = 1001
 [menu.main]
@@ -11,9 +11,7 @@ weight = 1001
 
 ## About me {#about-me}
 
-Name: Jackie Zhang / 张 凯
-
-Email: i@jiaoshou.me
+Jackie Zhang / 张 凯 / i@jiaoshou.me
 
 
 ### Interest {#interest}

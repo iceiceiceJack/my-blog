@@ -11,8 +11,11 @@ pygmentsUseClasses = true
 copyright = "&copy;Jackie Zhang 2019"
 
 [params]
-description = "啥也不会"
-# Chose Social Sharing Buttons you want to use.
-shareTo = ["Twitter", "Facebook"]
-# You may disable copyright sentence by setting this to false.
-showFooterCredits = true
+  description = "啥也不会"
+  # Chose Social Sharing Buttons you want to use.
+  shareTo = ["Twitter", "Facebook"]
+  # You may disable copyright sentence by setting this to false.
+  showFooterCredits = true
+
+[blackfriday]
+   extensions = ["hardLineBreak"]
