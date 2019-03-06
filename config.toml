@@ -8,6 +8,8 @@ summaryLength = 70
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 
+disqusShortname = "admin"
+
 copyright = "&copy;Jackie Zhang 2019"
 
 [params]
@@ -18,4 +20,4 @@ copyright = "&copy;Jackie Zhang 2019"
   showFooterCredits = true
 
 [blackfriday]
-   extensions = ["hardLineBreak"]
+  extensions = ["hardLineBreak"]
