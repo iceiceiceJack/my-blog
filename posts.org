@@ -160,7 +160,40 @@
      [[https://github.com/shadowsocks/shadowsocks-android/releases][Android]]
      [[https://github.com/shadowsocks/ShadowsocksX-NG/releases][MacOS]]
      [[https://github.com/shadowsocks/shadowsocks-qt5/releases][Linux]]
-
+*** TODO 面试题池（一）：数据结构                   :interview:dataStructure:
+    :PROPERTIES:
+    :EXPORT_HUGO_BUNDLE: 面试题池-一-数据结构
+    :EXPORT_DATE: [2019-03-06 Wed 11:18]
+    :EXPORT_FILE_NAME: index
+    :END:
+    作为一个不专业的面试官，决定记录些面试题备用。
+    可以问到的数据结构相关问题。
+    #+HUGO: more
+*** TODO 面试题池（二）：算法                           :interview:algorithm:
+    :PROPERTIES:
+    :EXPORT_HUGO_BUNDLE: 面试题池-二-算法
+    :EXPORT_DATE: [2019-03-06 Wed 11:28]
+    :EXPORT_FILE_NAME: index
+    :END:
+    可以问到的算法相关问题。
+    #+HUGO: more
+*** TODO 面试题池（三）：C/C++                                :interview:cpp:
+    :PROPERTIES:
+    :EXPORT_HUGO_BUNDLE: 面试题池-三-c-c++
+    :EXPORT_DATE: [2019-03-06 Wed 11:29]
+    :EXPORT_FILE_NAME: index
+    :END:
+    可以问到的C/C++相关问题。
+    #+HUGO: more
+**** explicit（显式）关键字
+     - explicit 修饰构造函数时，可以防止隐式转换和复制初始化。
+     - explicit 修饰转换函数时，可以防止隐式转换，但按语境转换除外。
+**** friend 友元类和友元函数
+     - 能访问私有成员
+     - 破坏封装性
+     - 友元关系不可传递
+     - 友元关系的单向性
+     - 友元声明的形式及数量不受限制
 
 ** Python                                                           :@python:
    :PROPERTIES:
