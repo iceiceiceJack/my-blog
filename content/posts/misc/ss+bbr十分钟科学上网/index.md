@@ -2,11 +2,12 @@
 title = "SS+BBR 十分钟科学上网"
 author = ["Jackie Zhang"]
 date = 2018-05-26T18:19:00+08:00
-lastmod = 2019-03-02T11:17:01+08:00
+lastmod = 2020-05-04T10:32:58+08:00
+slug = "ss+bbr"
 tags = ["shadowsocks"]
 categories = ["misc"]
 draft = false
-weight = 3002
+weight = 3001
 +++
 
 听闻不少小伙伴还在购买他人提供的VPN，这里分享下自己搭建梯子的方法。
@@ -53,11 +54,11 @@ weight = 3002
 也可以在本地终端中，利用添加的SSH密钥远程登录，并更新系统。
 
 ```sh
-ssh your-google-account@your-VM-IP
+  ssh your-google-account@your-VM-IP
 
-sudo su -
-apt update
-apt upgrade
+  sudo su -
+  apt update
+  apt upgrade
 ```
 
 注：更新过程中若出现google-cloud-SDK更新失败的错误，不要在意，是因为选择的VM配置太低造成的
@@ -68,11 +69,11 @@ apt upgrade
 开启BBR拥塞控制算法，需要内核版本4.9以上，Debian 9 默认4.9，Ubuntu 18.04 默认4.15。
 
 ```sh
-modprobe tcp_bbr
-echo "tcp_bbr" >> /etc/modules-load.d/modules.conf
-echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
-echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
-sysctl -p
+  modprobe tcp_bbr
+  echo "tcp_bbr" >> /etc/modules-load.d/modules.conf
+  echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
+  echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
+  sysctl -p
 ```
 
 重启后执行lsmod ，看到有tcp\_bbr模块即说明 bbr 已启动。
@@ -81,19 +82,19 @@ sysctl -p
 ### 3.安装配置shadowsocks {#3-dot-安装配置shadowsocks}
 
 ```sh
-apt install shadowsocks
+  apt install shadowsocks
 ```
 
 查看ssserver参数。
 
 ```sh
-ssserver -h
+  ssserver -h
 ```
 
 以守护进程形式运行。
 
 ```sh
-ssserver -k your-password -p your-server-port -d start
+  ssserver -k your-password -p your-server-port -d start
 ```
 
 最简单的只需配置密码和端口，端口为防火墙打开的端口，不输入默认8388要在防火墙中打开。

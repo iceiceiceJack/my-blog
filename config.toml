@@ -1,5 +1,5 @@
-baseURL = "https://jiaoshou.me/"
-title = "啥也不会张较瘦"
+baseURL = "https://codumn.com/"
+title = "键盘侠的部落格"
 theme = "hugo-primer"
 languageCode = "zh-cn"
 hasCJKLanguage = true
@@ -8,16 +8,25 @@ summaryLength = 70
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 
-disqusShortname = "admin"
+googleAnalytics = "G-NEYBRQCFCC"
+copyright = "&copy;Jackie 2020"
 
-copyright = "&copy;Jackie Zhang 2019"
+enableEmoji = true
 
+[frontmatter]
+  # update sitemap.xml's lastmod datetime by file change time, instead of git.
+  # lastmod = ["lastmod", ":fileModTime", ":default"]
 [params]
-  description = "啥也不会"
+  description = "金键盘奖优秀键盘侠"
+  twitter = 'iceiceiceJack'
+  # You can use favicon by adding `favicon-64.png` to `static` directory.
+  # You can also add `apple-touch-icon.png` and `pinned-icon.svg`.
+  useIcon = true
+  useTwitterCard = true
+  # Use MathJax.js. Disabling site-wide and you still can enable in indivisual pages
+  math = true
   # Chose Social Sharing Buttons you want to use.
   shareTo = ["Twitter", "Facebook"]
   # You may disable copyright sentence by setting this to false.
   showFooterCredits = true
 
-[blackfriday]
-  extensions = ["hardLineBreak"]

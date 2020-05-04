@@ -1,7 +1,7 @@
 +++
 title = "Me"
 author = ["Jackie Zhang"]
-lastmod = 2019-03-01T15:39:57+08:00
+lastmod = 2020-05-04T10:32:58+08:00
 draft = false
 weight = 1001
 [menu.main]
@@ -11,12 +11,12 @@ weight = 1001
 
 ## About me {#about-me}
 
-Jackie Zhang / 张 凯 / i@jiaoshou.me
+Jackie Zhang / 张 凯 / i@codumn.me
 
 
 ### Interest {#interest}
 
-Deep Learning
+Coding, Dota2
 
 
 ### Hobby {#hobby}
