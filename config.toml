@@ -8,7 +8,7 @@ summaryLength = 70
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 
-googleAnalytics = "G-HCLZZL4TJS"
+googleAnalytics = "UA-164911205-1"
 copyright = "&copy;2020 Jackie"
 
 enableEmoji = true
