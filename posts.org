@@ -161,3 +161,7 @@ Movie
   sudo cp -P lib64/libcudnn* /usr/local/cuda/lib64
   sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
 #+END_SRC
+** Memorandum :@备忘:
+:PROPERTIES:
+:EXPORT_HUGO_SECTION*: memorandum
+:END:
