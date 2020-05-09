@@ -26,7 +26,7 @@ Movie
 :PROPERTIES:
 :EXPORT_HUGO_SECTION: posts
 :END:
-** Misc :@misc:
+** Misc :@杂七杂八:
 :PROPERTIES:
 :EXPORT_HUGO_SECTION*: misc
 :END:
