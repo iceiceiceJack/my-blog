@@ -11,7 +11,7 @@ weight = 1001
 
 ## About me {#about-me}
 
-Jackie Zhang / 张 凯 / i@codumn.me
+Jackie Zhang / 张 凯 / i@codumn.com
 
 
 ### Interest {#interest}
