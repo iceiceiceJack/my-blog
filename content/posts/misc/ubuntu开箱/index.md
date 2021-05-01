@@ -6,7 +6,7 @@ lastmod = 2020-05-04T10:32:58+08:00
 slug = "ubuntu open box"
 tags = ["ubuntu", "setup"]
 categories = ["misc"]
-draft = false
+draft = true
 weight = 3002
 +++
 
