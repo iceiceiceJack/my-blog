@@ -1,5 +1,5 @@
 baseURL = "https://codumn.com/"
-title = "鹅厂键盘侠"
+title = "鹅厂键盘侠唤醒冠军之键盘的奇幻冒险"
 theme = "hugo-primer"
 languageCode = "zh-cn"
 hasCJKLanguage = true
@@ -9,7 +9,7 @@ pygmentsCodeFences = true
 pygmentsUseClasses = true
 
 googleAnalytics = "UA-164911205-1"
-copyright = "&copy;2020 Jackie"
+copyright = "&copy;2021 Jackie Zhang"
 
 enableEmoji = true
 
@@ -29,4 +29,3 @@ enableEmoji = true
   shareTo = ["Twitter", "Facebook"]
   # You may disable copyright sentence by setting this to false.
   showFooterCredits = true
-
