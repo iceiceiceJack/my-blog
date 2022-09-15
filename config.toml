@@ -1,5 +1,5 @@
 baseURL = "https://codumn.com/"
-title = "鹅厂键盘侠唤醒冠军之键盘的奇幻冒险"
+title = "键盘侠张大壮的奇幻冒险"
 theme = "hugo-primer"
 languageCode = "zh-cn"
 hasCJKLanguage = true
@@ -9,7 +9,7 @@ pygmentsCodeFences = true
 pygmentsUseClasses = true
 
 googleAnalytics = "UA-164911205-1"
-copyright = "&copy;2021 Jackie Zhang"
+copyright = "&copy;2022 Jackie Zhang"
 
 enableEmoji = true
 
